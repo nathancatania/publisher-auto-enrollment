@@ -7,4 +7,3 @@
 # Enroll the publisher using the provided token
 runcmd:
  - "/home/ubuntu/npa_publisher_wizard -token {{ token }}"
- 

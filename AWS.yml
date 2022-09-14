@@ -1,0 +1,10 @@
+## template: jinja
+#cloud-config
+
+# {# REQUIRED - Provide the Publisher enrolment key/token. Ensure to paste it within the double quotes! #}
+{% set token = "TOKEN" %}
+
+# Enroll the publisher using the provided token
+runcmd:
+ - "/home/ubuntu/npa_publisher_wizard -token {{ token }}"
+ 
